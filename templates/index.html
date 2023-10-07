@@ -3,29 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet"
+        href="/static/css/style.css">
+    <title>Celestial Face</title>
 </head>
 
 <body>
-    <form action="/add"
-        method="post"
-        enctype="multipart/form-data">
-        <input type="text"
-            id="newusername"
-            name='newusername'
-            required>
-        <input type="text"
-            id="newuserid"
-            name='newuserid'
-            required>
-        <button type="submit">Add Face</button>
-    </form>
+    <div class="Header">
+        <div class="logo">
+            <img src="/static/images/celestialface2.png">
+        </div>
+        <div class="icons">
+            <ul>
+                <img src="/static/images/vitb.svg">
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-box">
+            <form action="/add"
+                method="post"
+                enctype="multipart/form-data">
+                <div class="login-container">
+                    <div class="input-box">
+                        <input type="text"
+                            class="input-field"
+                            id="newusername"
+                            name="newusername"
+                            placeholder='New Username'
+                            required>
+                        <input type="text"
+                            class="input-field"
+                            id="newuserid"
+                            name="newuserid"
+                            placeholder='New Registration No.'
+                            required>
+                    </div>
+                    <button class="submit"
+                        type="submit"><strong>Add Face</strong></button>
+                </div>
+            </form>
+            <div>
+                <a href="/recog">
+                    <button class="recogb"><strong> Face Recog </strong> </button>
+                </a>
+            </div>
 
-    <a href="/recog">
-        <button>Face Recog</button>
-    </a>
+        </div>
+    </div>
+
 </body>
 
 </html>

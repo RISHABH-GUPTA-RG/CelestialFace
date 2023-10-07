@@ -3,7 +3,7 @@ from datacollect import takeImage,testImages
 from flask import Flask,render_template,redirect,request,Response
 import cv2
 
-app=Flask(__name__)
+app=Flask(__name__,template_folder="./templates",static_folder="./static")
 
 @app.route('/')
 def home():

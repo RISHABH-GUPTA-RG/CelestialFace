@@ -1,0 +1,143 @@
+.Header {
+    z-index: 1;
+    background-color: rgb(191, 206, 220, 0.35);
+    position: sticky;
+    top: 0;
+    height: 13vh;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.icons ul img {
+    margin-right: auto;
+    display: flex;
+    width: 200px;
+    height: 120px;
+    opacity: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    /* align-items: center; */
+    height: 50vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.303);
+    border-radius: 40px;
+    padding-top: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input-field {
+    margin-bottom: 4%;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.471);
+    /* color: #fff; */
+    height: 55px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+
+.input-field:hover,
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #000000;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 55px;
+    width: 90%;
+    border: none;
+    border-radius: 40px;
+    background: rgba(26, 194, 236, 0.853);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-top: 9px;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.recogb {
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    height: 55px;
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 40px;
+    background: rgba(223, 106, 246, 0.786);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-top: 9px;
+}
+
+.recogb:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
