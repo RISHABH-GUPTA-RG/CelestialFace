@@ -24,6 +24,10 @@ def FacialRecog():
     FaceRecog()
     return redirect('/')
 
+@app.route("/about")
+def About():
+    return render_template("about.html")
+
 # def gen_frames(camera):  
     
 #     while True:

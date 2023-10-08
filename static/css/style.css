@@ -1,12 +1,16 @@
-.Header {
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.Header {overflow: auto;
     z-index: 1;
-    background-color: rgb(191, 206, 220, 0.35);
     position: sticky;
+    background-image: url(/static/Images/background.jpg);
     top: 0;
-    height: 13vh;
+    height: 15vh;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .icons ul {
@@ -32,7 +36,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif ,'Josefin Sans';
 }
 
 body {
@@ -40,9 +44,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content {
@@ -54,9 +57,9 @@ body {
 
 .form-box {
     display: flex;
+    position: relative;
     flex-direction: column ;
     justify-content: center;
-    /* align-items: center; */
     height: 50vh;
     width: 30vw;
     background: rgba(255, 255, 255, 0.303);
@@ -140,4 +143,97 @@ header {
 .recogb:hover {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.aboutb {display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+}
+.aboutb a{
+    margin-right: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+.wrapper{
+    margin-top: 30px;
+  }
+  
+  .wrapper h1{
+    color: rgba(199, 7, 7, 0.622) ;
+    font-family: 'Allura';
+    font-size: 52px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .team{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .team .team_member{
+    background: rgba(255, 255, 255, 0.303);
+    border-radius: 40px;
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 10px;
+    line-height: 20px;
+    color: #8e8b8b;  
+    position: relative;
+  }
+  
+  .team .team_member h3{
+    color: rgba(199, 7, 7, 0.622);
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  
+  .team .team_member img{
+    object-fit: cover;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    
+  }
+  .team .team_member p.role{
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+.wrapper p{
+    color: rgba(0, 0, 0, 0.701);
+    line-height: 100%;
+    margin: 0% 7% 7% 7% ;
+    font-family: 'teko';
+    font-size: 35px;
+    text-align: center;
+}
+.form-box2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.303);
+    border-radius: 40px;
+    margin-top: 3%;
 }
