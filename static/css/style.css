@@ -72,6 +72,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 header {
@@ -86,7 +87,7 @@ header {
     font-size: 15px;
     background: rgba(255, 255, 255, 0.471);
     /* color: #fff; */
-    height: 55px;
+    height: 70px;
     width: 100%;
     padding: 0 10px 0 45px;
     border: none;
@@ -117,7 +118,7 @@ header {
     background: rgba(26, 194, 236, 0.853);
     cursor: pointer;
     transition: .3s ease-in-out;
-    margin-top: 9px;
+    margin-top: 10px;
 }
 
 .submit:hover {
@@ -137,7 +138,7 @@ header {
     background: rgba(223, 106, 246, 0.786);
     cursor: pointer;
     transition: .3s ease-in-out;
-    margin-top: 9px;
+    margin-top: 15px;
 }
 
 .recogb:hover {
